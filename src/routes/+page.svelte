@@ -1,1 +1,14 @@
-<h1 class="bg-linear-to-r from-zinc-500 via-stone-600 to-zinc-900">Buri Buri Zaimon</h1>
+<script lang="ts">
+	import FileManager from '$lib/components/File-Manager.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import { TooltipProvider } from '$lib/components/ui/tooltip';
+</script>
+
+<div class="dark min-h-screen w-full bg-background text-foreground">
+	<main class="container mx-auto p-4 pb-20">
+		<TooltipProvider>
+			<FileManager />
+		</TooltipProvider>
+	</main>
+	<Footer />
+</div>
